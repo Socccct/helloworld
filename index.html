@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+				list-style: none;
+			}
+			
+			body {
+				width: 100%;
+				height: auto;
+				background: #ebebeb;
+			}
+			
+			html {
+				font-size: 14px;
+				font-family: "微软雅黑";
+			}
+			
+			p {
+				margin: 0 0 10px;
+			}
+			
+			#header {
+				width: 100%;
+				height: px;
+				background: url(img/header.jpg) no-repeat;
+				background-position: center 20%;
+				background-size: cover;
+				padding-top: 62px;
+				padding-bottom: 62px;
+			}
+			
+			#logo {
+				width: 100%;
+				height: 98px;
+				text-align: center;
+			}
+			
+			#nav {
+				width: 100%;
+				height: auto;
+				text-align: center;
+				background: white;
+				margin-bottom: 35px;
+				border-bottom: 2px solid #e1e1e1;
+			}
+			
+			#nav ul {
+				width: 100%;
+				height: 56px;
+				text-align: center;
+				line-height: 56px;
+			}
+			
+			#nav ul li {
+				display: inline-block;
+				position: relative;
+				margin-bottom: 2px;
+			}
+			
+			#nav ul li a {
+				color: #505050;
+				display: block;
+				padding: 0 21px;
+			}
+			
+			#nav ul li:first-child a {
+				border-bottom: 2px orange solid;
+			}
+			
+			#wrap {
+				width: 100%;
+			}
+			
+			.post {
+				padding: 35px;
+				background: #ffffff;
+				margin: 0 15px;
+				margin-bottom: 35px;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.post-head {
+				text-align: center;
+			}
+			
+			.post-title {
+				margin: 0;
+				font-size: 2.5em;
+				line-height: 1em;
+				font-weight: 400;
+				color: #303030;
+			}
+			
+			.post-meta {
+				color: #959595;
+				margin: 14px 0 0px;
+			}
+			
+			a {
+				color: #e67e22;
+				outline: none;
+			}
+			
+			.post-content {
+				margin: 30px 0;
+				font: 400 18px/1.62 "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+				color: #444443;
+			}
+			
+			.post-content p {
+				margin-top: 0;
+				margin-bottom: 1.46em;
+			}
+			
+			.btn-default {
+				border: 1px solid #e67e22;
+				background: #e67e22;
+				color: #ffffff;
+				padding: 7px 14px;
+				border-radius: 2px;
+			}
+			
+			.post .post-footer {
+				margin-top: 30px;
+				border-top: 1px solid #ebebeb;
+				padding: 21px 0 0;
+			}
+			
+			.widget {
+				margin: 0 15px;
+				background: #ffffff;
+				padding: 21px 30px;
+			}
+			
+			.widget {
+				margin-bottom: 35px;
+			}
+			
+			.widget .title {
+				margin-top: 0;
+				padding-bottom: 7px;
+				border-bottom: 1px solid #ebebeb;
+				margin-bottom: 21px;
+				position: relative;
+			}
+			#navDiv{
+				display: none;
+			}
+			@media screen and (min-width:1200px) {
+				.row {
+					width: 1170px;
+					margin: 0 auto;
+				}
+				.left {
+					width: 64.66%;
+					float: left;
+				}
+				.right {
+					width: 33.34%;
+					float: left;
+				}
+			}
+			
+			@media screen and (max-width:770px) {
+				.row {
+					100%
+				}
+				.left {
+					width: 80%;
+					float: none;
+					margin: 0 auto;
+				}
+				.right {
+					width: 80%;
+					float: none;
+					margin: 0 auto;
+				}
+				#navDiv{
+				display: block;
+			}
+			#navUl{
+				display: none;
+			}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header">
+			<div id="logo">
+				<a href="#"><img src="img/logo.png" /></a>
+			</div>
+		</header>
+		<nav id="nav">
+			<div class="container">
+				<ul id="navUl">
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">论坛</a>
+					</li>
+					<li>
+						<a href="#">快捷手册</a>
+					</li>
+					<li>
+						<a href="#">中文文档</a>
+					</li>
+					<li>
+						<a href="#">下载</a>
+					</li>
+					<li>
+						<a href="#">关于</a>
+					</li>
+				</ul>
+				<div id="navDiv">
+					<img src="img/3.png"/>
+				</div>
+			</div>
+		</nav>
+		<section id="wrap">
+			<div class="row">
+
+				<main class="main left">
+					<article class="post">
+						<div class="post-head">
+							<h1 class="post-title">
+								Node.js v4 LTS 成为 Ghost 推荐版本
+							</h1>
+							<div class="post-meta">
+								<span class="author">作者：<a href="#">王赛</a></span> •
+								<time class="post-date">2016年7月26日</time>
+							</div>
+						</div>
+						<div class="post-content">
+							<p>从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行并且内存消耗比原来也减少了。目前，Ghost(Pro) 上托</p>
+						</div>
+						<div class="post-permalink">
+							<a href="#" class="btn-default">阅读全文</a>
+						</div>
+						<footer class="post-footer">
+						</footer>
+					</article>
+
+					<article class="post">
+						<div class="post-head">
+							<h1 class="post-title">
+								Node.js v4 LTS 成为 Ghost 推荐版本
+							</h1>
+							<div class="post-meta">
+								<span class="author">作者：<a href="#">王赛</a></span> •
+								<time class="post-date">2016年7月26日</time>
+							</div>
+						</div>
+						<div class="post-content">
+							<p>从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行并且内存消耗比原来也减少了。目前，Ghost(Pro) 上托</p>
+						</div>
+						<div class="post-permalink">
+							<a href="#" class="btn-default">阅读全文</a>
+						</div>
+						<footer class="post-footer">
+						</footer>
+					</article>
+
+					<article class="post">
+						<div class="post-head">
+							<h1 class="post-title">
+								Node.js v4 LTS 成为 Ghost 推荐版本
+							</h1>
+							<div class="post-meta">
+								<span class="author">作者：<a href="#">王赛</a></span> •
+								<time class="post-date">2016年7月26日</time>
+							</div>
+						</div>
+						<div class="post-content">
+							<p>从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行并且内存消耗比原来也减少了。目前，Ghost(Pro) 上托</p>
+						</div>
+						<div class="post-permalink">
+							<a href="#" class="btn-default">阅读全文</a>
+						</div>
+						<footer class="post-footer">
+						</footer>
+					</article>
+				</main>
+				<aside class="aside right">
+					<div class="widget">
+						<h4 class="title">社区</h4>
+						<div class="content community">
+							<p>QQ群：277327792</p>
+							<p>
+								<a href="#"><i class="fa fa-comments"></i> 问答社区</a>
+							</p>
+							<p>
+								<a href="#"><i class="fa fa-weibo"></i> 官方微博</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="widget">
+						<h4 class="title">社区</h4>
+						<div class="content community">
+							<p>QQ群：277327792</p>
+							<p>
+								<a href="#"><i class="fa fa-comments"></i> 问答社区</a>
+							</p>
+							<p>
+								<a href="#"><i class="fa fa-weibo"></i> 官方微博</a>
+							</p>
+						</div>
+					</div>
+					<div class="widget">
+						<h4 class="title">社区</h4>
+						<div class="content community">
+							<p>QQ群：277327792</p>
+							<p>
+								<a href="#"><i class="fa fa-comments"></i> 问答社区</a>
+							</p>
+							<p>
+								<a href="#"><i class="fa fa-weibo"></i> 官方微博</a>
+							</p>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</section>
+	</body>
+
+</html>
